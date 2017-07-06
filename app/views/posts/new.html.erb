@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1> Post Form </h1>
+    <form action="<%= posts_path %>" method="POST">
+      <label>Post title:</label><br>
+      <input type="text" id="post_title" name="post[title]"><br>
+
+      <label>Post description:</label><br>
+      <textarea id="post_description" name="post[description]"></textarea><br>
+
+      <input type="submit" value="Submit Post">
+    </form>
+  </body>
+</html>
